@@ -7,14 +7,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import TastytalesImg from '../assets/images/Tasty Tales.png'
 import LogoImg from '../assets/images/logo.png'
+import { Link } from 'react-router-dom';  
 import './Header.css'
-import { Link } from 'react-router-dom';
-
 function Header() {
     return (
         <>
-            {['md'].map((expand) => (
-                <Navbar key={expand} expand={expand} className=" navbar fixed-top bg-white mb-3">
+
+            {[false,'md'].map((expand) => (
+                <Navbar style={{overflowX:'hidden'}} key={expand} expand={expand} className="navbar fixed-top bg-white mb-3">
                     <Container fluid >
                         <Navbar.Brand href="/"><img style={{ height: '50px', width: '50px' }} src={LogoImg} alt="" /><img style={{ height: '50px', width: '70px' }} src={TastytalesImg} alt="" /></Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />

@@ -9,7 +9,7 @@ function Home() {
     <>
       {/* landing page */}
 
-      <div style={{ width: '100%', height: '100vh', color: 'white', backgroundImage: `url('https://wallpapers.com/images/hd/plain-black-with-wooden-pattern-09v7n22juf06luep.jpg')` }}  >
+      <div  style={{  width: '100%', height: '100vh', color: 'white', backgroundImage: `url('https://wallpapers.com/images/hd/plain-black-with-wooden-pattern-09v7n22juf06luep.jpg')` }}  >
         <div style={{ height: '75%' }} className='container'>
           <div style={{ height: '100%' }} className="row align-items-center ">
             <div style={{ marginTop: '95px' }} className="col-lg-5 text-white " >
