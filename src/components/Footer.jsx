@@ -5,6 +5,7 @@ import LogoImg from '../assets/images/logo.png'
 
 function Footer() {
   return (
+    
     <div  className='bg-white '>
 
 
@@ -64,8 +65,8 @@ function Footer() {
         </div>
         <p style={{ color: 'gray' }} className='text-center mt-5 '><Link style={{textDecoration:'none',color:'gray'}}>Privacy Policy</Link><Link style={{textDecoration:'none',color:'gray'}} > *  Terms</Link></p>
       </div>
-
-    </div>
+  
+                </div>
   )
 }
 
