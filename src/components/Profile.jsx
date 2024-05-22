@@ -101,7 +101,7 @@ useEffect(()=>{
                                     <img style={{ height: '50px', width: '50px' }} className=' bg-dark ' src={profile} alt="" /> <span style={{ fontFamily: '"Satisfy", cursive' ,fontSize:'30px' }} className='ps-4  text-dark ms-1 pt-2 pb-2 ps-5 pe-4 rounded'><b>hi, {username?.split(" ")[0]}</b></span>
                                 </div>
 
-                                <Button style={{ paddingLeft: '160px', paddingRight: '160px' }} className='btn btn-dark '><Link to={'/profile'} style={{ textDecoration: 'none', color: "white" }}>My Profile </Link></Button>
+                                <Button style={{ paddingLeft: '150px', paddingRight: '150px' }}className='btn btn-dark '><Link to={'/profile'} style={{ textDecoration: 'none', color: "white" }}>My Profile </Link></Button>
                                 <Button className='btn btn-dark '> <Link to={'/personalrecipes'} style={{ textDecoration: 'none', color: "white" }}>All Personal Recpies </Link></Button>
                                 <Button className='btn btn-dark '>  <Link to={'/favorite'} style={{ textDecoration: 'none', color: "white" }}> Saved Recpies </Link>
                                 </Button>

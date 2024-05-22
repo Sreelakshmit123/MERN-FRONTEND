@@ -32,7 +32,7 @@ function App() {
         <Route path='/login' element={<Auth/>}/>
         <Route path='/register' element={<Auth insideRegister/>} />
         <Route path='/favorite' element={<FavoriteRecipes/>} />
-        <Route path='/newrecipes' element={<AddYourRecipes/>} />
+        <Route path='/newrecipes'element={isAuthorised?<AddYourRecipes/>:<Auth/>} />
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/personalrecipes' element={isAuthorised?<Personalrecipes/>:<Auth/>}/>
 

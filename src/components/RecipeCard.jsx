@@ -77,9 +77,9 @@ function RecipeCard({ personalRecipes, recipes }) {
     <>
 
       <div>
-        {recipes && <Card style={{ width: '18rem', height: '24rem', marginLeft: '90px' }}>
+        {recipes && <Card style={{ width: '18rem', height: '23.5rem'}} className='recipescard'>
 
-          <Card.Img style={{ width: '18rem', height: '18rem' }} onClick={handleImg} variant="top" src={`${SERVER_URL}/uploads/${recipes.recipeImage}`} />
+          <Card.Img className='recipesimg' style={{ width: '18rem', height: '16.5rem' }} onClick={handleImg} variant="top" src={`${SERVER_URL}/uploads/${recipes.recipeImage}`} />
 
           <Card.Body>
             <Card.Title>{recipes?.title}{personalRecipes?
@@ -89,7 +89,9 @@ function RecipeCard({ personalRecipes, recipes }) {
               </div>
               :
               <span style={{ float: 'right' }}>  <Button onClick={() => handleSaved(recipes)} variant="dark" ><i className={isSave ? "fa-solid fa-bookmark text-danger" : "fa-solid fa-bookmark "}></i></Button></span>}</Card.Title>
-
+              <div className='text-dark'>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
           </Card.Body>
         </Card>}
       </div>
